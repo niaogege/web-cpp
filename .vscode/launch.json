@@ -1,0 +1,106 @@
+{
+  "configurations": [
+    {
+      "name": "ssr-npm",
+      "request": "launch",
+      "runtimeArgs": ["run-script", "dev"],
+      "runtimeExecutable": "npm",
+      "cwd": "${workspaceFolder}/ssr",
+      "skipFiles": ["<node_internals>/**"],
+      "stopOnEntry": true,
+      "type": "node"
+    },
+    {
+      "name": "debugger koa/index",
+      "program": "${workspaceFolder}/koa/index.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
+      "name": "koa-npm",
+      "request": "launch",
+      "runtimeArgs": ["run-script", "dev"],
+      "runtimeExecutable": "npm",
+      "skipFiles": ["<node_internals>/**"],
+      "cwd": "${workspaceFolder}/koa",
+      "type": "node"
+    },
+    {
+      "name": "esbuild/test",
+      "program": "${workspaceFolder}/esbuild/build.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
+      "name": "debugger wepack",
+      "program": "${workspaceFolder}/webpack/src/index.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
+      "name": "Test Npm",
+      "program": "${workspaceFolder}/npmTest/index.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
+      "name": "postcss-plugin-module-scope",
+      "program": "${workspaceFolder}/postcss/plugin/scope/test.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
+      "name": "postcss-plugin-focus",
+      "program": "${workspaceFolder}/postcss/plugin/focus/test.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
+      "name": "postcss-plugin-pxToRem",
+      "program": "${workspaceFolder}/postcss/plugin/pxToRem/test.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
+      "name": "SSR Program",
+      "program": "${workspaceFolder}/ssr/dist/bundle.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "console": "internalConsole",
+      "cwd": "${workspaceFolder}/ssr",
+      "type": "node"
+    },
+
+    {
+      "name": "ssr-vite-npm",
+      "request": "launch",
+      "runtimeArgs": ["run-script", "dev"],
+      "runtimeExecutable": "npm",
+      "skipFiles": ["<node_internals>/**"],
+      "cwd": "${workspaceFolder}/ssr-vite",
+      "stopOnEntry": true,
+      "type": "node",
+      "env": {
+        "cpp": "CPP DEV",
+        "wmh": "WMH DEV"
+      }
+    },
+    {
+      "name": "Nest Router DI",
+      "request": "launch",
+      "runtimeArgs": ["run-script", "dev:router"],
+      "runtimeExecutable": "npm",
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"],
+      "cwd": "${workspaceFolder}/nest/nest-test",
+      "type": "node"
+    }
+  ]
+}

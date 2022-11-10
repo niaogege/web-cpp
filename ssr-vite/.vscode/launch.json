@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "name": "ssr-vite-npm",
+      "request": "launch",
+      "runtimeArgs": ["run-script", "dev"],
+      "runtimeExecutable": "npm",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    },
+    {
+      "name": "ssr-vite-local",
+      "program": "${workspaceFolder}/src/ssr-server/index.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node",
+      "outFiles": ["${workspaceFolder}/dist/**"]
+    }
+  ]
+}

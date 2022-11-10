@@ -1,0 +1,15 @@
+[submodule "main"]
+	path = main
+	url = https://github.com/niaogege/cpp-ui.git
+[submodule "pnpm-test"]
+	path = pnpm-test
+	url = https://github.com/niaogege/pnpm-test.git
+[submodule "ui-demo"]
+	path = ui-demo
+	url = https://github.com/niaogege/cpp-demo.git
+[submodule "react-ssr"]
+	path = react-ssr
+	url = https://github.com/niaogege/ssr.git
+[submodule "nest-test"]
+	path = nest-test
+	url = https://github.com/niaogege/nest-test.git

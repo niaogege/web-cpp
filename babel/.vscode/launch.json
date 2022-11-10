@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "name": "Auto Ubt 自动埋点",
+      "program": "${workspaceFolder}/plugin/autoUbt/test.js",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    },
+    {
+      "name": "Change Function 改变函数入參",
+      "program": "${workspaceFolder}/plugin/changeArguments/test.js",
+      "request": "launch",
+      "type": "node"
+    },
+  ]
+}

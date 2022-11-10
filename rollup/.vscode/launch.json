@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "name": "测试Alias",
+      "program": "${workspaceFolder}/src/index.js",
+      "request": "launch",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    },
+    {
+      "name": "测试rollup插件",
+      "program": "${workspaceFolder}/build.js",
+      "request": "launch",
+      "type": "node"
+    },
+  ]
+}

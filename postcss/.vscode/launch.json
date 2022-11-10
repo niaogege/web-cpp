@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "name": "debugger postcss-plugin-module-scope",
+      "program": "${workspaceFolder}/plugin/test.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    }
+  ]
+}

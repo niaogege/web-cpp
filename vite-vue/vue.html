@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <script src="https://unpkg.com/vue@next"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- <script type="module" src="/src/main.js"></script> -->
+    <script>
+      const {
+        createApp, h,
+        resolveComponent
+      } = Vue
+      console.log(Vue, 'Vue')
+      const Counter = {
+        data() {
+          return {
+            counter: 0
+          }
+        },
+        render() {
+          return h('div', {
+            onClick: ($event) => { 
+              alert('CPP')
+            },
+            props: {
+              name: 'wmh'
+            },
+            title: 'chendapeng '
+          }, [
+            h('h2', this.counter),
+            h(resolveComponent('the-first-com')),
+          ])
+        }
+      }
+      const app = createApp(Counter)
+
+      app.component('the-first-com', {
+        data() {
+          return {
+            name: 'this is child'
+          }
+        },
+        methods: {
+          changeState:function(){
+            console.log('-----change Child state-----')
+            this.name = 'Child-new state'
+          }
+        },
+        render() {
+          return h('div', {}, [
+            h('h2', this.name),
+            h('button', {
+              onClick: this.changeState
+            }, 'Change this Child'),
+          ])
+        }
+      })
+      app.mount('#app')
+    </script>
+  </body>
+</html>

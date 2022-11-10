@@ -1,0 +1,53 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "esbuild",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC"
+    },
+    "prefix": "/Users/xmly/My/project/@cpp/esbuild"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/Users/xmly/Library/pnpm/store/v3",
+    "virtualStoreDir": "/Users/xmly/My/project/@cpp/esbuild/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/Users/xmly/My/project/@cpp/esbuild",
+    "stage": "resolution_started"
+  },
+  "4 error pnpm": {
+    "code": "ERR_PNPM_FETCH_403",
+    "hint": "An authorization header was used: Basic Y2hl[hidden]",
+    "request": {
+      "authHeaderValue": "Basic Y2hlbmRhcGVuZzoyOTEwMDM5MzJjcHBA",
+      "url": "http://xnpm.ximalaya.com/esbuild"
+    },
+    "response": {
+      "size": 0
+    },
+    "pkgName": "esbuild",
+    "spec": {
+      "fetchSpec": "latest",
+      "name": "esbuild",
+      "type": "tag"
+    },
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "GET http://xnpm.ximalaya.com/esbuild: Forbidden - 403",
+      "code": "ERR_PNPM_FETCH_403",
+      "stack": "pnpm: GET http://xnpm.ximalaya.com/esbuild: Forbidden - 403\n    at RetryOperation._fn (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:84259:19)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+    }
+  }
+}

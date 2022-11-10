@@ -1,0 +1,11 @@
+
+test {
+  width: 1.25rem;
+}
+a {
+  font-size: 1.75rem;
+}
+.ignore {
+  border: 1Px solid red;
+  border-width: 2Px;
+}

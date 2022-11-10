@@ -1,0 +1,11 @@
+{
+  "configurations": [
+    {
+      "name": "Test esbuild",
+      "program": "${workspaceFolder}/build.js",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node"
+    }
+  ]
+}

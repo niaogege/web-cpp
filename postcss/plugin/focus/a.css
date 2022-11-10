@@ -1,0 +1,8 @@
+.a:hover,
+.b:hover,
+.a:focus {
+  outline: 0;
+}
+.b:focus {
+  background: red;
+}
